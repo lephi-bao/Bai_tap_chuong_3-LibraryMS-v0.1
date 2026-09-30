@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% extends "base.html" %} {% block title %}Trang chủ{% endblock %} {% block
+    content %}
+
+    <h1>Quản lý thư viện</h1>
+
+    <p>
+      Tổng số đầu sách:
+      <strong>{{ total_books }}</strong>
+    </p>
+
+    <p>
+      Số sách sẵn sàng cho mượn:
+      <strong>{{ available_books }}</strong>
+    </p>
+
+    {% endblock %}
+  </body>
+</html>
